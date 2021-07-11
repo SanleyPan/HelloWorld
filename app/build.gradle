@@ -11,7 +11,7 @@ android {
         app {
             storeFile file("${rootProject.projectDir}/keystore/debug.keystore")
             storePassword properties.getProperty("key.password")
-            keyAlias 'app'
+            keyAlias 'alias_name'
             keyPassword properties.getProperty("key.password")
         }
     }
