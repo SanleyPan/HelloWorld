@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void openNewActivity() {
+    private void openNewActivity() {
         Intent intent = new Intent(this, ConstraintActivity.class);
         startActivity(intent);
     }
