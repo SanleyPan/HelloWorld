@@ -25,6 +25,15 @@
                 android:backgroundTint="@color/gray"
                 android:text="@string/constraint_layout" />
 
+            <Button
+                android:id="@+id/pick_contact"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/gray"
+                android:text="@string/pick_contact" />
+
         </LinearLayout>
     </ScrollView>
 
