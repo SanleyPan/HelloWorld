@@ -11,6 +11,7 @@
         android:theme="@style/Theme.HelloWorld">
         <activity android:name=".ConstraintActivity"/>
         <activity android:name=".LoginActivity" android:theme="@style/Theme.Design.Light.NoActionBar"/>
+        <activity android:name=".MyFragmentActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -19,7 +19,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        openConstraintActivity();
+        openActivity(ConstraintActivity.class,R.id.button);
+        openActivity(MyFragmentActivity.class,R.id.fragment);
         openContact();
 
     }
@@ -38,20 +39,22 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void openConstraintActivity() {
-        button = (Button) findViewById(R.id.button);
+    private void openActivity(Class cs,int id) {
+        button = (Button) findViewById(id);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openNewActivity();
+                openNewActivity(cs );
             }
         });
     }
 
-    private void openNewActivity() {
-        Intent intent = new Intent(this, ConstraintActivity.class);
+    private void openNewActivity(Class cs) {
+        Intent intent = new Intent(this, cs);
         startActivity(intent);
     }
+
+
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {

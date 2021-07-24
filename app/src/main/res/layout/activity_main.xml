@@ -34,6 +34,16 @@
                 android:backgroundTint="@color/gray"
                 android:text="@string/pick_contact" />
 
+            <Button
+                android:id="@+id/fragment"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/gray"
+                android:text="@string/fragment" />
+
+
         </LinearLayout>
     </ScrollView>
 
